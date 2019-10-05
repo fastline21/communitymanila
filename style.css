@@ -1,0 +1,87 @@
+/*
+Theme Name: Community Manila WP Theme
+Author: Joshwa Facistol
+Author URI: https://iamjoshwa.com/
+Description: Custom WordPress Theme for Community Manila Website.
+Version: 1.0
+*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+.logo {
+    width: 25vh;
+}
+.section {
+    padding: 20vh 0 10vh;
+    background-color: #fff;
+}
+.content {
+    padding: 10vh 5vh;
+}
+.button {
+    border-radius: 0;
+    border: 2px solid #192f62;
+    background: #fff;
+    color: #192f62;
+}
+.button:hover {
+    background: #192f62;
+    color: #fff;
+    border: 2px solid #192f62;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #192f62;
+    background-color: rgba(235, 235, 235, 0.80);
+    padding: 1em;
+    display: none;
+}
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+/* Banner */
+#banner {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 95vh;
+}
+#banner::before {
+    background-image: url('/assets/1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+}
+
+/* About */
+#about .content .text {
+    font-size: 3vh;
+}
+
+/* #FAQs */
+#faqs .link:hover {
+    text-decoration: none;
+}
+
+/* Contact Us */
+#contact-us {
+    background-color: #fff;
+}
+#contact-us .input {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 0.50vh #192f62;
+}
